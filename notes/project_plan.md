@@ -63,3 +63,7 @@ Date: 2026-05-23
 ## Immediate Next Step
 
 Complete a literature table with parameter values and decide the first live/dead cell model before writing any new solver code.
+
+Primary manuscript-support note:
+
+- `reference_knowledge_base.md`
