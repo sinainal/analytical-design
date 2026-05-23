@@ -1,0 +1,17 @@
+Design V0 Clausius-Mossotti scan
+==================================
+
+Medium conductivity: 0.002 S/m
+Frequency scan: 1000 Hz to 10000000 Hz
+
+Selected point: maximum |dead Re(CM) - live Re(CM)|
+Selected frequency: 455326 Hz
+Live Re(CM): 0.976616
+Dead Re(CM): -0.000044
+Dead - live contrast: -0.976660
+
+Interpretation:
+Live cells are in positive DEP while dead cells are in near-zero DEP; this is a useful first-pass operating point for lateral DEP biasing.
+
+CSV: results/cm_factor/design_v0_cm_factor.csv
+Plot: results/cm_factor/design_v0_cm_factor.png

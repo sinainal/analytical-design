@@ -12,6 +12,7 @@ core.*
 # Generated data
 results/raw/
 results/tmp/
+results/text_extracts/
 
 # Local literature copies
 papers/*.pdf
