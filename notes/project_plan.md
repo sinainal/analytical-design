@@ -67,3 +67,7 @@ Complete a literature table with parameter values and decide the first live/dead
 Primary manuscript-support note:
 
 - `reference_knowledge_base.md`
+
+First simulation specification:
+
+- `design_v0_spec.md`
