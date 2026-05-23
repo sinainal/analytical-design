@@ -36,6 +36,16 @@ Date: 2026-05-23
 - Track particles with DEP and drag.
 - Compute outlet classification automatically.
 
+Status update, 2026-05-24:
+
+- V0/V1/V2 produced useful screening outputs, but V2 confirmed that the current
+  reduced-order DEP proxy is not realistic enough for final claims.
+- Before optimization, build Design V3 as a field-coupled OpenFOAM workflow:
+  OpenFOAM `U` + OpenFOAM `phiE` + exported/interpolated `grad(|E|^2)` +
+  particle tracking in the actual mesh.
+- Use `notes/openfoam_microfluidics_reference_audit.md` as the immediate V3
+  realism checklist.
+
 ## Phase 4 - Simulation Study
 
 - Voltage threshold map.
