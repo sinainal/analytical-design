@@ -1,0 +1,56 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| Analytical Design: generated OpenFOAM file                                  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    object      boundary;
+}
+// ************************************************************************* //
+7
+(
+    inlet
+    {
+        type            patch;
+        nFaces          16;
+        startFace       9104;
+    }
+    outlet_inner
+    {
+        type            patch;
+        nFaces          8;
+        startFace       9120;
+    }
+    outlet_outer
+    {
+        type            patch;
+        nFaces          8;
+        startFace       9128;
+    }
+    inner_electrode
+    {
+        type            wall;
+        nFaces          480;
+        startFace       9136;
+    }
+    outer_electrode
+    {
+        type            wall;
+        nFaces          480;
+        startFace       9616;
+    }
+    top_wall
+    {
+        type            wall;
+        nFaces          1920;
+        startFace       10096;
+    }
+    bottom_wall
+    {
+        type            wall;
+        nFaces          1920;
+        startFace       12016;
+    }
+)

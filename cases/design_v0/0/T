@@ -1,0 +1,24 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| Analytical Design: generated OpenFOAM file                                  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+// ************************************************************************* //
+
+dimensions      [0 0 0 0 0 0 0];
+internalField   uniform 0;
+boundaryField
+{
+    inlet { type zeroGradient; }
+    outlet_inner { type zeroGradient; }
+    outlet_outer { type zeroGradient; }
+    inner_electrode { type fixedValue; value uniform 8; }
+    outer_electrode { type fixedValue; value uniform 0; }
+    top_wall { type zeroGradient; }
+    bottom_wall { type zeroGradient; }
+}

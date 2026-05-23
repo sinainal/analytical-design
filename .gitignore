@@ -1,10 +1,13 @@
 # OpenFOAM runtime outputs
 [0-9]*/
+!cases/design_v0/0/
+!cases/design_v0/0/**
 processor*/
 postProcessing/
 VTK/
 log.*
 *.foam
+!cases/design_v0/design_v0.foam
 *.OpenFOAM
 core
 core.*

@@ -1,0 +1,13 @@
+{
+  "turns": 3.0,
+  "inner_radius_m": 0.001,
+  "channel_width_m": 0.00012,
+  "channel_height_m": 5e-05,
+  "pitch_m": 0.00018,
+  "cells_along": 240,
+  "cells_width": 8,
+  "cells_height": 2,
+  "voltage_v": 8.0,
+  "inlet_velocity_m_s": 0.001,
+  "selected_frequency_hz": 455326
+}

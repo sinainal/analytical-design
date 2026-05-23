@@ -1,0 +1,47 @@
+# OpenFOAM Design V0 Result
+
+## Why This Was Generated
+
+This is the first OpenFOAM-backed device check for the project. The goal is to
+verify that an Archimedean spiral DEP channel can be generated as a valid
+OpenFOAM mesh and can support a first electric-potential solve between side-wall
+electrodes.
+
+## Generator
+
+Run from the repository root:
+
+```bash
+python3 scripts/design_v0_geometry.py
+source /usr/lib/openfoam/openfoam2312/etc/bashrc
+./cases/design_v0/Allrun
+```
+
+## Compact Result
+
+- Case directory: `cases/design_v0/`
+- Mesh cells: `3840` hexahedra
+- Boundary patches: inlet, inner outlet, outer outlet, inner electrode, outer
+  electrode, top wall, bottom wall
+- `checkMesh`: passed
+- Electric potential proxy: `T`
+- Electrode values: inner wall `8 V`, outer wall `0 V`
+- `laplacianFoam`: solved one step
+- Final residual for first potential correction: `3.3127437e-11`
+- Potential range after solve: `0` to `8`
+
+## ParaView
+
+Open `cases/design_v0/design_v0.foam` in ParaView. The generated case includes
+the valid mesh and, after running `Allrun`, local unversioned time output for the
+solved potential field.
+
+## Limitations
+
+This is not yet a full live/dead cell separation simulation. It validates the
+mesh and side-wall potential solve only. The next layer must add:
+
+1. Electric-field and `grad(E^2)` post-processing.
+2. DEP force calculation at the selected `455 kHz` frequency.
+3. Live/dead particle trajectory tracking.
+4. Outlet metrics and plots.
