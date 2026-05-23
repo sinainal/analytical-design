@@ -18,4 +18,6 @@ Examples:
 - `S0_D1_T1`: no spiral, DEP is used, dead/live topic is present.
 - `S1_D1_T1`: spiral + DEP + dead/live topic. This is the target combination.
 
-Important: `S1_D1_T1` currently contains proxy papers, not a confirmed direct match. This folder documents the gap by placing the nearest papers from each neighboring category together.
+Rule: each folder must contain only exact matches for its three labels. If no exact paper has been identified, the folder contains only a README explaining that status.
+
+Important: `S1_D1_T1` is the target combination. It currently has no exact paper in this local matrix.
