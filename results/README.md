@@ -8,6 +8,8 @@ decisions and later manuscript figures.
 | Directory | Purpose | Versioned |
 |---|---|---|
 | `cm_factor/` | First analytical live/dead DEP frequency scan. | Yes |
+| `openfoam_design_v0/` | First OpenFOAM mesh/potential and reduced-order trajectories. | Yes |
+| `openfoam_design_v1/` | DOE optimization results and ParaView trajectory outputs. | Yes |
 | `raw/` | Large raw solver/runtime outputs. | No |
 | `tmp/` | Temporary scratch outputs. | No |
 | `text_extracts/` | Local text extracted from papers for private review. | No |

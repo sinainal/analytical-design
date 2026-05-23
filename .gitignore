@@ -17,6 +17,7 @@ results/raw/
 results/tmp/
 results/text_extracts/
 results/openfoam_design_v0/paraview/frames/
+results/openfoam_design_v1/paraview/render/frames/
 
 # Local literature copies
 papers/*.pdf
