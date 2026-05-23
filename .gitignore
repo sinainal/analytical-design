@@ -1,0 +1,31 @@
+# OpenFOAM runtime outputs
+[0-9]*/
+processor*/
+postProcessing/
+VTK/
+log.*
+*.foam
+*.OpenFOAM
+core
+core.*
+
+# Generated data
+results/raw/
+results/tmp/
+
+# Local literature copies
+papers/*.pdf
+papers/*.html
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local/editor files
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
