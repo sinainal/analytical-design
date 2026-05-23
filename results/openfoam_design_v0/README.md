@@ -36,6 +36,22 @@ Open `cases/design_v0/design_v0.foam` in ParaView. The generated case includes
 the valid mesh and, after running `Allrun`, local unversioned time output for the
 solved potential field.
 
+Automated rendering:
+
+```bash
+./scripts/render_design_v0_video.sh --frames 72 --width 1280 --height 720
+```
+
+Generated media:
+
+- `results/openfoam_design_v0/paraview/design_v0_potential_still.png`
+- `results/openfoam_design_v0/paraview/frames/frame_*.png`
+- `results/openfoam_design_v0/design_v0_paraview_orbit.mp4`
+
+On this workstation ParaView can write all frames but may return a GLX context
+warning at shutdown. The wrapper treats this as non-fatal if the frames exist
+and then encodes the video with OpenCV.
+
 ## Limitations
 
 This is not yet a full live/dead cell separation simulation. It validates the
