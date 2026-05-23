@@ -16,6 +16,9 @@ results/tmp/
 # Local literature copies
 papers/*.pdf
 papers/*.html
+paper_matrix/**/*.pdf
+paper_matrix/**/*.html
+!paper_matrix/**/README.md
 
 # Python
 __pycache__/
