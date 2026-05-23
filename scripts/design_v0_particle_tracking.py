@@ -189,6 +189,9 @@ def simulate(
         "total_particles": 2 * particles_per_class,
         "correct_fraction": (live_inner + dead_outer) / (2 * particles_per_class),
         "model_status": "reduced_order_first_pass",
+        "turns": spec.turns,
+        "voltage_v": spec.voltage_v,
+        "inlet_velocity_m_s": spec.inlet_velocity_m_s,
     }
     return records, summary
 
@@ -298,6 +301,10 @@ def write_summary(summary: dict, path: Path) -> None:
         "Design V0 reduced-order trajectory summary",
         "==========================================",
         "",
+        f"Turns: {summary['overall']['turns']}",
+        f"Voltage: {summary['overall']['voltage_v']} V",
+        f"Inlet velocity: {summary['overall']['inlet_velocity_m_s'] * 1e6:.0f} um/s",
+        "",
         f"Live inner outlet: {summary['live']['inner_outlet']} / {summary['live']['particles']}",
         f"Dead outer outlet: {summary['dead']['outer_outlet']} / {summary['dead']['particles']}",
         f"Correct fraction: {summary['overall']['correct_fraction']:.3f}",
@@ -314,26 +321,37 @@ def main() -> int:
     parser.add_argument("--particles", type=int, default=100)
     parser.add_argument("--steps", type=int, default=360)
     parser.add_argument("--seed", type=int, default=7)
+    parser.add_argument("--turns", type=float, default=3.0)
+    parser.add_argument("--voltage", type=float, default=8.0)
+    parser.add_argument("--velocity", type=float, default=1000e-6)
     parser.add_argument("--frames", type=int, default=144)
     parser.add_argument("--size", type=int, default=900)
     parser.add_argument("--fps", type=float, default=24.0)
     parser.add_argument("--out-dir", type=Path, default=OUT_DIR)
+    parser.add_argument("--skip-video", action="store_true")
+    parser.add_argument("--skip-plot", action="store_true")
     args = parser.parse_args()
 
-    spec = SpiralSpec()
+    spec = SpiralSpec(
+        turns=args.turns,
+        voltage_v=args.voltage,
+        inlet_velocity_m_s=args.velocity,
+    )
     args.out_dir.mkdir(parents=True, exist_ok=True)
     records, summary = simulate(spec, args.particles, args.steps, args.seed)
     write_csv(records, args.out_dir / "design_v0_trajectories.csv")
     write_summary(summary, args.out_dir / "trajectory_summary.json")
-    plot_static(records, spec, args.out_dir / "design_v0_trajectory_plot.png")
-    render_video(
-        records,
-        spec,
-        args.out_dir / "design_v0_trajectory_video.mp4",
-        args.frames,
-        args.size,
-        args.fps,
-    )
+    if not args.skip_plot:
+        plot_static(records, spec, args.out_dir / "design_v0_trajectory_plot.png")
+    if not args.skip_video:
+        render_video(
+            records,
+            spec,
+            args.out_dir / "design_v0_trajectory_video.mp4",
+            args.frames,
+            args.size,
+            args.fps,
+        )
     print((args.out_dir / "trajectory_summary.txt").read_text(encoding="utf-8"))
     return 0
 

@@ -1,0 +1,29 @@
+{
+  "live": {
+    "particles": 100,
+    "inner_outlet": 90,
+    "outer_outlet": 10,
+    "inner_fraction": 0.9,
+    "mean_final_lateral_um": -28.89432252289163,
+    "std_final_lateral_um": 21.155735397473663,
+    "wall_limited_count": 19
+  },
+  "dead": {
+    "particles": 100,
+    "inner_outlet": 42,
+    "outer_outlet": 58,
+    "inner_fraction": 0.42,
+    "mean_final_lateral_um": 2.9981810285763997,
+    "std_final_lateral_um": 12.490289813783876,
+    "wall_limited_count": 0
+  },
+  "overall": {
+    "correct_if_live_inner_dead_outer": 148,
+    "total_particles": 200,
+    "correct_fraction": 0.74,
+    "model_status": "reduced_order_first_pass",
+    "turns": 3.0,
+    "voltage_v": 10.0,
+    "inlet_velocity_m_s": 0.001
+  }
+}

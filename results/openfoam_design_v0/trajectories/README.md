@@ -49,3 +49,19 @@ The current model uses an analytical side-wall field-gradient proxy rather than
 interpolating `grad(E^2)` from the OpenFOAM solution. The next version should
 replace this proxy with field-derived electric forces and sweep voltage,
 velocity, and turn count.
+
+## 12-Case Sweep
+
+An autonomous sweep was added in `sweep_12/`.
+
+Best reduced-order candidate:
+
+- `5 turns`
+- `12 V`
+- `1000 um/s`
+- correct classification: `85.5%`
+- live inner fraction: `100%`
+- dead outer fraction: `71%`
+
+The best candidate has a separate fixed-camera animation in
+`best_sweep_case/design_v0_trajectory_video.mp4`.

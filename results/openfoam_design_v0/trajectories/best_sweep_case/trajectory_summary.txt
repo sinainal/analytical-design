@@ -1,0 +1,14 @@
+Design V0 reduced-order trajectory summary
+==========================================
+
+Turns: 5.0
+Voltage: 12.0 V
+Inlet velocity: 1000 um/s
+
+Live inner outlet: 100 / 100
+Dead outer outlet: 71 / 100
+Correct fraction: 0.855
+Live mean final lateral: -57.30 um
+Dead mean final lateral: 6.89 um
+
+Status: reduced-order first pass; not yet field-interpolated from OpenFOAM.
