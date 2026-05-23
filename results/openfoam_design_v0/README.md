@@ -52,6 +52,22 @@ On this workstation ParaView can write all frames but may return a GLX context
 warning at shutdown. The wrapper treats this as non-fatal if the frames exist
 and then encodes the video with OpenCV.
 
+## Fixed-Camera Trajectory Animation
+
+The first reduced-order live/dead particle animation is stored in:
+
+- `results/openfoam_design_v0/trajectories/design_v0_trajectory_video.mp4`
+- `results/openfoam_design_v0/trajectories/design_v0_trajectory_plot.png`
+
+This animation uses a fixed camera. The spiral does not rotate; particles move
+through the channel.
+
+Current first-pass trajectory metric:
+
+- live to inner outlet: `77 / 100`
+- dead to outer outlet: `58 / 100`
+- correct live-inner/dead-outer classification: `67.5%`
+
 ## Limitations
 
 This is not yet a full live/dead cell separation simulation. It validates the

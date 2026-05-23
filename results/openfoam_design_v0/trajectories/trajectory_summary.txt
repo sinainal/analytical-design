@@ -1,0 +1,10 @@
+Design V0 reduced-order trajectory summary
+==========================================
+
+Live inner outlet: 77 / 100
+Dead outer outlet: 58 / 100
+Correct fraction: 0.675
+Live mean final lateral: -16.41 um
+Dead mean final lateral: 3.00 um
+
+Status: reduced-order first pass; not yet field-interpolated from OpenFOAM.

@@ -1,0 +1,26 @@
+{
+  "live": {
+    "particles": 100,
+    "inner_outlet": 77,
+    "outer_outlet": 23,
+    "inner_fraction": 0.77,
+    "mean_final_lateral_um": -16.411476403452255,
+    "std_final_lateral_um": 19.13686256991231,
+    "wall_limited_count": 5
+  },
+  "dead": {
+    "particles": 100,
+    "inner_outlet": 42,
+    "outer_outlet": 58,
+    "inner_fraction": 0.42,
+    "mean_final_lateral_um": 2.9978512861698627,
+    "std_final_lateral_um": 12.49038625006423,
+    "wall_limited_count": 0
+  },
+  "overall": {
+    "correct_if_live_inner_dead_outer": 135,
+    "total_particles": 200,
+    "correct_fraction": 0.675,
+    "model_status": "reduced_order_first_pass"
+  }
+}
