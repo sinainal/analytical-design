@@ -32,6 +32,44 @@ Date: 2026-05-23
 - Combined DEP and AC electrothermal flow numerical simulation, Micromachines 2024: https://doi.org/10.3390/mi15030345
 - Viable Legionella DEP selection, Biomedical Microdevices 2025: https://doi.org/10.1007/s10544-025-00762-1
 - High-efficiency ODEP live/dead separation, JAUSMT source page: https://www.jausmt.org/index.php/jausmt/article/view/342
+- Continuous live/dead NIH-3T3 separation with asymmetric periodic electrodes, Analytical Chemistry 2012: https://doi.org/10.1021/ac300079q
+- CMOS-based DEP live/dead yeast characterization and separation, Micromachines 2021: https://doi.org/10.3390/mi12030270
+- Conductivity-induced DEP with 3D ionic liquid electrodes for live/dead PC-3 separation, Scientific Reports 2017: https://doi.org/10.1038/srep41406
+- Signal-based DEP separation review, Sensors 2022: https://doi.org/10.3390/s22155552
+- Spiral electrode DEP manipulation of MDA-MB-231 cells, Biophysical Journal 1992: https://pmc.ncbi.nlm.nih.gov/articles/PMC1184382/
+- Live/dead Staphylococcus aureus DEP response, RSC Advances 2020: https://doi.org/10.1039/C9RA05886A
+
+## Similarity Audit
+
+The current collection is strong but not exhaustive. The closest known paper classes are:
+
+1. Spiral DEP biological separation:
+   - Betyar and Ramiar 2026.
+   - Patel/Xuan curvature-induced DEP spiral paper.
+   - Yilmaz spiral DEP separator thesis.
+   - Older spiral-electrode DEP manipulation papers.
+2. Live/dead DEP separation:
+   - NIH-3T3 asymmetric electrode array.
+   - yeast CMOS DEP.
+   - U937 monocyte 3D carbon DEP.
+   - PC-3 live/dead ionic-liquid-electrode DEP.
+   - leukemia cDEP.
+   - ODEP live/dead separation.
+3. Spiral nonviable-cell handling without DEP:
+   - CHO/nonviable mammalian cell inertial spiral removal.
+   - broader spiral inertial sorting review papers.
+4. Design-risk references:
+   - AC electrothermal/Joule heating.
+   - DEP signal and travelling-wave DEP reviews.
+
+No paper found yet appears to combine all of the following at once:
+
+- spiral microchannel
+- DEP
+- continuous outlet-based live/dead or viable/nonviable mammalian-cell sorting
+- OpenFOAM implementation
+
+That combination remains the likely novelty window, but the search should be repeated once more after the first design is specified.
 
 ## Source Links
 
