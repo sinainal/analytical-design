@@ -23,6 +23,12 @@ Date: 2026-05-23
 | `nguyen_2024_facing_electrode_dep_cell_separation.pdf` | Facing-electrode DEP numerical design for biological cell separation | Useful for electrode placement, trajectory modeling, and fabrication-simplifying electrode ideas. |
 | `tian_2024_on_chip_dep_single_cell_manipulation_review.pdf` | DEP single-cell manipulation review | Useful for positioning, terminology, force scales, and modern DEP device taxonomy. |
 | `altmann_2025_viable_legionella_dep_selection_download_page.html` | Video-quantified DEP selection of viable bacterial cells | Recent viability-selective DEP; PDF endpoint is protected, but the source is important for quantifiable response metrics. |
+| `R09_huang_2025_odep_live_dead_separation.pdf` | Reference-coded copy of R9 ODEP live/dead paper | Kept for manuscript citation workflow. |
+| `R10_nguyen_2024_facing_electrode_dep_cell_separation.pdf` | Reference-coded copy of R10 facing-electrode DEP paper | Kept for manuscript citation workflow. |
+| `R15_micromachines_2024_dep_acet_thermal_risk.pdf` | DEP + AC electrothermal numerical simulation | Supports Joule-heating/ACET risk discussion and future thermal checks. |
+| `R16_micromachines_2024_spiral_inertial_cell_sorting_review.pdf` | Spiral inertial Lab-on-Chip cell sorting review | Supports geometry/prototyping/device-feasibility discussion. |
+| `R17_circular_dep_openfoam_2023_sciencedirect_metadata.md` | Circular microchannel OpenFOAM DEP, metadata only | High-performance OpenFOAM DEP comparison; PDF access blocked by ScienceDirect. |
+| `R18_stepwise_multistage_dep_microfilter_2024_sciencedirect_metadata.md` | Stepwise multi-stage DEP + microfilter, metadata only | Topology inspiration for V7 stepwise late-DEP geometry; PDF access blocked by ScienceDirect. |
 
 ## Recent Sources To Fetch/Track
 
@@ -32,6 +38,8 @@ Date: 2026-05-23
 - Combined DEP and AC electrothermal flow numerical simulation, Micromachines 2024: https://doi.org/10.3390/mi15030345
 - Viable Legionella DEP selection, Biomedical Microdevices 2025: https://doi.org/10.1007/s10544-025-00762-1
 - High-efficiency ODEP live/dead separation, JAUSMT source page: https://www.jausmt.org/index.php/jausmt/article/view/342
+- Circular OpenFOAM DEP microchannel, Advanced Powder Technology 2023: https://doi.org/10.1016/j.apt.2023.104046
+- Stepwise multi-stage DEP + microfilter chip, Talanta 2024: https://doi.org/10.1016/j.talanta.2024.126585
 - Continuous live/dead NIH-3T3 separation with asymmetric periodic electrodes, Analytical Chemistry 2012: https://doi.org/10.1021/ac300079q
 - CMOS-based DEP live/dead yeast characterization and separation, Micromachines 2021: https://doi.org/10.3390/mi12030270
 - Conductivity-induced DEP with 3D ionic liquid electrodes for live/dead PC-3 separation, Scientific Reports 2017: https://doi.org/10.1038/srep41406

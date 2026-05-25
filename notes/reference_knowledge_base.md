@@ -22,8 +22,10 @@ This file assigns stable reference numbers for later manuscript drafting. Use th
 | R12 | Altmann et al., viable Legionella DEP selection, Biomedical Microdevices, 2025. DOI: https://doi.org/10.1007/s10544-025-00762-1 | `papers/altmann_2025_viable_legionella_dep_selection_download_page.html` | Recent viability-selective DEP quantification. |
 | R13 | Huang 2014 DLD review, Lab on a Chip. DOI: https://doi.org/10.1039/C4LC00939H | `papers/huang_2014_dld_particle_separation_review.html` | Non-DEP passive separation background. |
 | R14 | DLD viable/nonviable cell separation conference paper, 2015. Source: https://www.rsc.org/images/LOC/2015/PDFs/Papers/0404_M.025a.pdf | `papers/dld_2015_viable_nonviable_cells_conference.pdf` | Non-DEP, non-spiral viable/nonviable comparison. |
-| R15 | DEP + AC electrothermal numerical simulation, Micromachines, 2024. DOI: https://doi.org/10.3390/mi15030345 | to fetch/track | Thermal and AC electrothermal risk. |
-| R16 | Spiral inertial cell sorting review, Micromachines, 2024. DOI: https://doi.org/10.3390/mi15091135 | to fetch/track | Spiral geometry review and bioprocess positioning. |
+| R15 | Numerical simulations of combined dielectrophoresis and AC electrothermal flow for high-efficient separation of (bio)microparticles, Micromachines, 2024. DOI: https://doi.org/10.3390/mi15030345 | `papers/R15_micromachines_2024_dep_acet_thermal_risk.pdf` | Thermal and AC electrothermal risk. |
+| R16 | Petruzzellis et al., "Lab-on-Chip Systems for Cell Sorting: Main Features and Advantages of Inertial Focusing in Spiral Microchannels", Micromachines, 2024. DOI: https://doi.org/10.3390/mi15091135 | `papers/R16_micromachines_2024_spiral_inertial_cell_sorting_review.pdf` | Spiral geometry review and bioprocess positioning. |
+| R17 | "Design and numerical investigation of a circular microchannel for particle/cell separation using dielectrophoresis", Advanced Powder Technology, 2023. DOI: https://doi.org/10.1016/j.apt.2023.104046 | `papers/R17_circular_dep_openfoam_2023_sciencedirect_metadata.md` | Circular/OpenFOAM DEP high-performance numerical comparison; PDF access blocked. |
+| R18 | "A stepwise multi-stage continuous dielectrophoresis separation microfluidic chip with microfilter structures", Talanta, 2024. DOI: https://doi.org/10.1016/j.talanta.2024.126585 | `papers/R18_stepwise_multistage_dep_microfilter_2024_sciencedirect_metadata.md` | Stepwise electrode/microfilter topology inspiration for V7/V8. |
 
 ## Foundational Claims For The Manuscript
 
