@@ -48,3 +48,12 @@ experimental safety claim.
 - `v7_accuracy_vs_joule_power.png`
 - `v7_validation_controls.png`
 - `v7_length_vs_validated_correct.png`
+- `paraview/v7_best_particles.pvd`: ParaView particle animation source
+- `paraview/v7_best_trajectories.vtp`: full particle trajectories
+- `paraview/v7_best_paraview.mp4`: rendered V7 animation
+
+The `stepwise` V7 candidate is currently modeled as late segmented DEP
+activation, not as a serrated physical channel wall. The ParaView animation
+therefore shows the spiral path and particle motion; electrode staging is
+encoded in the force model and reported by `dep_start_fraction` /
+`dep_end_fraction`.
