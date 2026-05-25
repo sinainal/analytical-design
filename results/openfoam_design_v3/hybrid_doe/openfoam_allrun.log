@@ -8,10 +8,10 @@
 Build  : _9a9aeb73-20260127 OPENFOAM=2312 patch=260127 version=2312
 Arch   : "LSB;label=32;scalar=64"
 Exec   : checkMesh
-Date   : May 25 2026
-Time   : 23:48:35
+Date   : May 26 2026
+Time   : 00:11:59
 Host   : perceptron
-PID    : 2454630
+PID    : 2735386
 I/O    : uncollated
 Case   : /home/sina/Downloads/ece_proje/project/analytical-design/cases/design_v0
 nProcs : 1
@@ -106,10 +106,10 @@ End
 Build  : _9a9aeb73-20260127 OPENFOAM=2312 patch=260127 version=2312
 Arch   : "LSB;label=32;scalar=64"
 Exec   : laplacianFoam
-Date   : May 25 2026
-Time   : 23:48:35
+Date   : May 26 2026
+Time   : 00:11:59
 Host   : perceptron
-PID    : 2454639
+PID    : 2735395
 I/O    : uncollated
 Case   : /home/sina/Downloads/ece_proje/project/analytical-design/cases/design_v0
 nProcs : 1
@@ -138,7 +138,7 @@ Time = 1
 DICPCG:  Solving for T, Initial residual = 1, Final residual = 3.3127437e-11, No Iterations 17
 DICPCG:  Solving for T, Initial residual = 5.1186872e-07, Final residual = 3.157003e-11, No Iterations 7
 DICPCG:  Solving for T, Initial residual = 4.7716554e-10, Final residual = 6.8258184e-11, No Iterations 1
-ExecutionTime = 0.03 s  ClockTime = 0 s
+ExecutionTime = 0.02 s  ClockTime = 0 s
 
 End
 

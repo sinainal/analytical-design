@@ -112,6 +112,26 @@ V7 result update, 2026-05-25:
   than V6 while being much more geometry-specific.
 - Detailed outputs are in `results/design_v7_geometry_feasibility/`.
 
+V8 result update, 2026-05-26:
+
+- Added ML-assisted shape-family optimization across asymmetric C-spiral,
+  pinched/step spiral, compact C-arc/facing-electrode-like, serpentine-stepwise,
+  and wide low-heat asymmetric families.
+- ML role: ExtraTrees surrogate ranked virtual candidates after real
+  reduced-order simulations; reported finalists are held-out particle
+  simulations, not direct ML predictions.
+- Best short-channel candidate: `asymmetric_c_spiral`, validated target correct
+  `0.957 +/- 0.006`, length `10.9 mm`, topology gain versus same-length
+  straight DEP `0.129`, active Joule power proxy `3.34 mW`, steady substrate
+  temperature-rise proxy `3.67 C`, wall loss `0.000`.
+- Highest-accuracy geometry-specific alternative: `pinched_step_spiral`,
+  validated target correct `0.991 +/- 0.005`, length `15.6 mm`, topology gain
+  `0.452`.
+- V8 still uses a reduced-order `field_gain` proxy for shaped/facing/pinched
+  electrode concentration. The next rigor step is electrode-resolved OpenFOAM or
+  FEM field solution for the chosen V8 family.
+- Detailed outputs are in `results/design_v8_shape_ml_optimization/`.
+
 ## Phase 5 - Manuscript Package
 
 - Introduction and literature gap.
