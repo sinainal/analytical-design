@@ -97,6 +97,21 @@ V6 result update, 2026-05-25:
 - Detailed outputs are in `results/optimization_v1/V6_DECISION_SUMMARY.md` and
   `results/optimization_v1/balanced_synergy_validation/`.
 
+V7 result update, 2026-05-25:
+
+- Added geometry/feasibility screening across smooth spiral, short spiral,
+  low-heat spiral, compact C-arc, serpentine controls, and stepwise late-DEP
+  spiral variants.
+- Best current V7 candidate is `stepwise_late_dep_spiral`: validated target
+  correct `0.914 +/- 0.014`, topology gain versus same-length straight DEP
+  `0.239`, wall loss `0.000`, length `64.4 mm`, active Joule power proxy
+  `5.90 mW`, and steady substrate temperature-rise proxy `1.6 C`.
+- The no-cooling adiabatic proxy is still high (`87.9 C`), so any final
+  experimental safety claim needs a real heat-transfer solve. For project-level
+  ranking, the steady substrate proxy suggests this candidate is more feasible
+  than V6 while being much more geometry-specific.
+- Detailed outputs are in `results/design_v7_geometry_feasibility/`.
+
 ## Phase 5 - Manuscript Package
 
 - Introduction and literature gap.
