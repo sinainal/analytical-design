@@ -1,0 +1,39 @@
+{
+  "best": {
+    "stage": "segmented_spiral",
+    "sample_id": 129,
+    "case_id": "spiral_dep_1_sign_-1_f_988.081kHz_V_17.8744_u_3311_split_0.411492",
+    "mean_target_correct": 0.9986111111111112,
+    "std_target_correct": 0.0024056261216234324,
+    "mean_wall_loss": 0.001388888888888889,
+    "mean_gap_um": 30.491037169419446,
+    "mean_score": 1.1034547412040794,
+    "preferred_direction": "B_live_outer_dead_inner",
+    "frequency_hz": 988080.6553731601,
+    "voltage_v": 17.87437657542774,
+    "velocity_um_s": 3310.7500878310793,
+    "turns": 3.80310706214402,
+    "inner_radius_um": 533.0196444365002,
+    "pitch_um": 301.31297865657706,
+    "channel_width_um": 77.62183867913217,
+    "outlet_split_ratio": 0.4114924830056381,
+    "inlet_offset_ratio": -0.6667811801388245,
+    "inlet_spread_ratio": 0.17557897203002895,
+    "dep_start_fraction": 0.12001961051727064,
+    "dep_end_fraction": 0.6404174805621506,
+    "dean_scale": 0.5575385887160442,
+    "dep_sign": -1.0
+  },
+  "synergy": {
+    "stage": "segmented_spiral",
+    "sample_id": 129,
+    "spiral_dep_on": 0.996875,
+    "straight_dep_on": 0.934375,
+    "spiral_flow_only": 0.503125,
+    "straight_flow_only": 0.490625,
+    "spiral_gain": 0.0625,
+    "dep_gain": 0.4937499999999999,
+    "synergy_score": 0.0625,
+    "spiral_wall_loss": 0.003125
+  }
+}

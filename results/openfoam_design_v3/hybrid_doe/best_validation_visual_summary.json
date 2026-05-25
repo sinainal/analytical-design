@@ -1,0 +1,16 @@
+{
+  "case_id": "turns_3.5_voltage_7_velocity_2600um_s",
+  "split": "visual",
+  "seed": 101,
+  "turns": 3.5,
+  "voltage_v": 7.0,
+  "velocity_um_s": 2600.0,
+  "correct_fraction": 0.44583333333333336,
+  "live_recovery": 0.2916666666666667,
+  "dead_removal": 0.6,
+  "live_purity": 0.45454545454545453,
+  "dead_outlet_purity": 0.5142857142857142,
+  "wall_loss": 0.09583333333333334,
+  "live_lost": 17,
+  "dead_lost": 6
+}

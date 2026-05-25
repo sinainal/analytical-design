@@ -58,6 +58,45 @@ Status update, 2026-05-24:
   - outlet split
   - electrode segmentation
 
+Status update, 2026-05-25:
+
+The next school-project scope is intentionally compact and defensible:
+
+1. Design V4 - model realism check:
+   - frequency-dependent live/dead Clausius-Mossotti response
+   - both outlet label conventions, `correct_A` and `correct_B`
+   - outlet split ratio
+   - final lateral distribution plots
+2. Design V5 - spiral/DEP isolation:
+   - spiral with DEP off
+   - spiral with DEP on
+   - same-length straight channel with DEP on/off
+   - reversed DEP sign sanity check
+   - report `spiral_gain`, `dep_gain`, and `synergy_score`
+3. Design V6 - optimization handoff:
+   - fast Latin-hypercube/random search scaffold
+   - target `max(correct_A, correct_B) >= 0.8`
+   - keep wall loss and purity as constraints, not hidden penalties
+
+These versions avoid deformable cells, cell-cell coupling, GPU code, and Joule
+heating. They are meant to be fast enough for 100-200 condition optimization
+while still being more rigorous than a single ideal particle trajectory.
+
+V6 result update, 2026-05-25:
+
+- Max-accuracy design reached `0.999` target correct, but its same-length
+  straight DEP control was also high (`0.937`), so it is not the best
+  spiral-specific argument.
+- The selected paper-facing V6 design is the balanced-synergy candidate:
+  `0.945 +/- 0.007` nominal held-out target correct, `0.922 +/- 0.083`
+  tolerance-perturbed target correct, same-length straight DEP control `0.737`,
+  and screened synergy `0.178`.
+- The honest claim is segmented DEP plus inlet focusing in a compact spiral
+  microchannel. Spiral geometry contributes measurably, but DEP and inlet
+  focusing remain essential.
+- Detailed outputs are in `results/optimization_v1/V6_DECISION_SUMMARY.md` and
+  `results/optimization_v1/balanced_synergy_validation/`.
+
 ## Phase 5 - Manuscript Package
 
 - Introduction and literature gap.

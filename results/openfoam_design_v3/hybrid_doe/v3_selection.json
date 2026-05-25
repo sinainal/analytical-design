@@ -1,0 +1,47 @@
+{
+  "selected_by_design": {
+    "case_id": "turns_3.5_voltage_7_velocity_2600um_s",
+    "split": "design",
+    "turns": 3.5,
+    "voltage_v": 7.0,
+    "velocity_um_s": 2600.0,
+    "mean_correct": 0.45,
+    "min_correct": 0.4222222222222222,
+    "std_correct": 0.04110735718596873,
+    "mean_live_recovery": 0.31666666666666665,
+    "mean_dead_removal": 0.5833333333333334,
+    "mean_live_purity": 0.4768307274118935,
+    "mean_dead_outlet_purity": 0.5112830867936878,
+    "mean_wall_loss": 0.09814814814814815
+  },
+  "selected_validation": {
+    "case_id": "turns_3.5_voltage_7_velocity_2600um_s",
+    "split": "validation",
+    "turns": 3.5,
+    "voltage_v": 7.0,
+    "velocity_um_s": 2600.0,
+    "mean_correct": 0.45925925925925926,
+    "min_correct": 0.4361111111111111,
+    "std_correct": 0.02362472374476495,
+    "mean_live_recovery": 0.32037037037037036,
+    "mean_dead_removal": 0.5981481481481481,
+    "mean_live_purity": 0.48104614643602334,
+    "mean_dead_outlet_purity": 0.5256676021453064,
+    "mean_wall_loss": 0.09907407407407408
+  },
+  "best_by_validation": {
+    "case_id": "turns_3.5_voltage_7_velocity_2600um_s",
+    "split": "validation",
+    "turns": 3.5,
+    "voltage_v": 7.0,
+    "velocity_um_s": 2600.0,
+    "mean_correct": 0.45925925925925926,
+    "min_correct": 0.4361111111111111,
+    "std_correct": 0.02362472374476495,
+    "mean_live_recovery": 0.32037037037037036,
+    "mean_dead_removal": 0.5981481481481481,
+    "mean_live_purity": 0.48104614643602334,
+    "mean_dead_outlet_purity": 0.5256676021453064,
+    "mean_wall_loss": 0.09907407407407408
+  }
+}
