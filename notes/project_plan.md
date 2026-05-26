@@ -176,6 +176,28 @@ V10 result update, 2026-05-26:
   width, electrode gap, and DEP activation values. Detailed outputs are in
   `results/design_v10_short_clean_shapes/`.
 
+V11 result update, 2026-05-26:
+
+- Added a larger clean-shape library and a hard non-intersection/channel-overlap
+  filter. New families include logarithmic spirals, elliptic logarithmic
+  spirals, Fermat spirals, S-bend prefocus spirals, and short circular C-arcs.
+- Shape optimization remains parameter-based ML, not arbitrary curve drawing.
+  ExtraTrees ranks formula candidates using family id, frequency, voltage,
+  velocity, turns, radius, pitch, width, eccentricity, curvature power, inlet
+  length/focusing, DEP start/end, electrode gap, electrode coverage, field gain,
+  and Dean scale.
+- Best V11 candidate is again a monotone-curvature spiral,
+  `r(theta)=r0/(1+k theta)^p`, but shorter than V10: target correct
+  `0.963 +/- 0.004`, length `7.08 mm`, same-length straight DEP control
+  `0.777`, topology gain `0.185`, wall loss `0.000`, no self-intersection,
+  no channel-overlap flag, minimum nonlocal clearance `238 um`, and active
+  Joule power proxy `4.83 mW`.
+- Several very short C-arc/logarithmic candidates reached high target correct,
+  but did not pass because their straight controls were equally high or thermal
+  proxies were high. This keeps the selection focused on geometry contribution,
+  not just easy DEP/residence-time wins.
+- Detailed outputs are in `results/design_v11_shape_ml_nonintersection/`.
+
 ## Phase 5 - Manuscript Package
 
 - Introduction and literature gap.
