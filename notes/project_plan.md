@@ -132,6 +132,27 @@ V8 result update, 2026-05-26:
   FEM field solution for the chosen V8 family.
 - Detailed outputs are in `results/design_v8_shape_ml_optimization/`.
 
+V9 result update, 2026-05-26:
+
+- Replaced informal/free-form shape labels with explicit mathematical shape
+  functions. Tested curvature-modulated spirals, outlet-expanded modulated
+  spirals, tapered C-spirals, and log-like Dean spirals.
+- Best V9 candidate is a curvature-modulated spiral defined by
+  `r(theta)=a+b theta+c sin(n theta+phi)`. Held-out validation gave target
+  correct `0.943 +/- 0.014`, same-length straight DEP control `0.518`,
+  topology gain `0.424`, length `34.8 mm`, wall loss `0.000`, active Joule
+  power proxy `7.32 mW`, and steady substrate temperature-rise proxy `3.50 C`.
+- This is the strongest current argument that spiral curvature is doing more
+  than simply adding channel length. The no-DEP and unfocused-inlet controls
+  remain near weak-baseline levels, so inlet focusing plus DEP staging are still
+  essential.
+- The top five formula geometries are saved as parameter JSON files and
+  centerline CSV files with `x`, `y`, local width, and DEP activation values.
+- V9 still uses a reduced-order electric-field concentration proxy. Before a
+  final device claim, the selected formula should be rebuilt with
+  electrode-resolved OpenFOAM/FEM fields.
+- Detailed outputs are in `results/design_v9_formula_shapes/`.
+
 ## Phase 5 - Manuscript Package
 
 - Introduction and literature gap.
