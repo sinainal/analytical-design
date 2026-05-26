@@ -218,6 +218,25 @@ V12 result update, 2026-05-26:
   `output/doc/spiral_dep_v12_final_optimization_report.docx`.
 - Detailed outputs are in `results/design_v12_final_package/`.
 
+V13 result update, 2026-05-26:
+
+- Converted the V12 final package into a longer manuscript-style DOCX draft
+  with Abstract, Introduction, Theory and Design Rationale, Numerical Methods,
+  Shape Optimization Results, Final Operating Optimization, Simulation
+  Visualizations, Thermal/Hydraulic Feasibility, Discussion, Limitations,
+  Conclusion, and References.
+- Added V13-specific simulation visualization outputs for the selected final
+  operating point: projected live/dead trajectories on the final centerline,
+  final lateral-position distributions, outlet-count visualization, and
+  trajectory CSV tables.
+- The report includes 15 figures combining CM-factor modeling, geometry
+  galleries, final geometry, ML/topology comparison, operating-window maps,
+  trajectory visualizations, final metrics, controls, flowrate/thermal maps,
+  and a professional-style simulation still from earlier visualization work.
+- The rendered manuscript draft is 21 pages and is saved at
+  `output/doc/spiral_dep_v13_manuscript_draft.docx`.
+- Detailed outputs are in `results/design_v13_manuscript_report/`.
+
 ## Phase 5 - Manuscript Package
 
 - Introduction and literature gap.
