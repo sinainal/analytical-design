@@ -153,6 +153,29 @@ V9 result update, 2026-05-26:
   electrode-resolved OpenFOAM/FEM fields.
 - Detailed outputs are in `results/design_v9_formula_shapes/`.
 
+V10 result update, 2026-05-26:
+
+- Replaced visually irregular V9 modulation with clean named geometry families:
+  circular Archimedean spiral, elliptic Archimedean spiral, monotone-curvature
+  spiral, elliptic-prefocus spiral, superellipse/oval spiral, and
+  concentric-electrode spiral.
+- The V10 pass gate explicitly prioritizes short devices: length `<= 20 mm`,
+  target correct `>= 0.80`, positive topology gain versus same-length straight
+  DEP, low wall loss, acceptable electrode gap, acceptable bend radius, and no
+  high thermal-risk flag.
+- Best V10 candidate is `monotone_curvature_spiral` with
+  `r(theta)=r0/(1+k theta)^p`, outer low-curvature inlet, target correct
+  `0.953 +/- 0.013`, length `9.15 mm`, same-length straight DEP control
+  `0.579`, topology gain `0.374`, wall loss `0.000`, active Joule power proxy
+  `8.22 mW`, and steady substrate temperature-rise proxy `10.55 C`
+  (`moderate` thermal flag).
+- Some short elliptic candidates reached `1.000` target correct, but their
+  same-length straight controls were also near `0.99`; these are therefore not
+  strong evidence for geometry synergy and were rejected by the V10 gate.
+- V10 stores each finalist as a formula JSON and centerline CSV with channel
+  width, electrode gap, and DEP activation values. Detailed outputs are in
+  `results/design_v10_short_clean_shapes/`.
+
 ## Phase 5 - Manuscript Package
 
 - Introduction and literature gap.
