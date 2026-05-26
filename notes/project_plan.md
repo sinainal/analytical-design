@@ -198,6 +198,26 @@ V11 result update, 2026-05-26:
   not just easy DEP/residence-time wins.
 - Detailed outputs are in `results/design_v11_shape_ml_nonintersection/`.
 
+V12 result update, 2026-05-26:
+
+- Consolidated the design into a manuscript-facing final optimization package
+  with DOCX report, rendered visual check, publication-style figures, operating
+  sweep tables, final validation replicates, and final summary tables.
+- V12 uses the V11 non-intersecting monotone-curvature spiral as the final
+  geometry baseline and optimizes operating conditions around it: voltage,
+  flow velocity, electrode gap, electrode coverage, frequency, inlet focusing,
+  DEP active window, and outlet split.
+- The selected V12 operating point prioritizes academic/device feasibility over
+  maximum apparent accuracy: target correct `0.940 +/- 0.013`, live recovery
+  `0.880`, dead removal `1.000`, live outlet purity `1.000`, dead outlet purity
+  `0.893`, wall loss `0.000`, flow rate `0.547 uL/min`, voltage `20.36 V`,
+  electrode gap `72.9 um`, active Joule power proxy `2.86 mW`, steady substrate
+  temperature-rise proxy `3.89 C`, pressure drop proxy `0.10 kPa`, same-length
+  straight DEP control `0.809`, and topology gain `0.131`.
+- The V12 report is exactly 20 rendered pages and is saved at
+  `output/doc/spiral_dep_v12_final_optimization_report.docx`.
+- Detailed outputs are in `results/design_v12_final_package/`.
+
 ## Phase 5 - Manuscript Package
 
 - Introduction and literature gap.
