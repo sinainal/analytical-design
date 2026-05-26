@@ -1,0 +1,17 @@
+geometry,formula,length_mm,footprint_mm2,min_clearance_widths,passes_visual_clearance_gate,purpose
+archimedean,r=a+b theta,4.6637,2.2637,2.4470,True,publication geometry library; not final simulated metric unless selected
+elliptic_archimedean,"x=r cos(theta), y=e r sin(theta)",3.9127,1.5461,1.7482,True,publication geometry library; not final simulated metric unless selected
+monotone_curvature,r=r0/(1+k theta)^p,5.0066,3.4016,3.7446,True,publication geometry library; not final simulated metric unless selected
+logarithmic,r=a exp(k theta),3.1339,1.4686,1.9283,True,publication geometry library; not final simulated metric unless selected
+fermat,r=a sqrt(1+k theta),4.8286,2.2626,2.7380,True,publication geometry library; not final simulated metric unless selected
+superellipse_oval,superellipse spiral,4.1349,1.6240,1.7923,True,publication geometry library; not final simulated metric unless selected
+racetrack_oval,oval/stadium mapping,4.8509,2.0012,1.9559,True,publication geometry library; not final simulated metric unless selected
+short_c_arc,short C-arc,3.0813,1.8150,2.6552,True,publication geometry library; not final simulated metric unless selected
+elliptic_c_arc,elliptic C-arc,2.8975,1.5484,1.9867,True,publication geometry library; not final simulated metric unless selected
+s_bend_spiral,S-bend prefocus + spiral,3.0544,1.1928,1.0366,True,publication geometry library; not final simulated metric unless selected
+contraction_spiral,contraction inlet + elliptic spiral,3.5858,1.2246,1.7754,True,publication geometry library; not final simulated metric unless selected
+linked_oval_arc,"linked oval arc, no crossover",2.5908,0.7346,1.5707,True,publication geometry library; not final simulated metric unless selected
+spiral_expanded_outlet,elliptic spiral + expanded outlet,4.1240,1.9228,1.7678,True,publication geometry library; not final simulated metric unless selected
+kidney_spiral,smooth kidney-like oval,4.0119,1.6080,1.8754,True,publication geometry library; not final simulated metric unless selected
+D_spiral,D-shaped smooth spiral,4.1690,1.6064,1.7655,True,publication geometry library; not final simulated metric unless selected
+teardrop_spiral,smooth teardrop spiral,3.3154,1.3904,1.5522,True,publication geometry library; not final simulated metric unless selected
