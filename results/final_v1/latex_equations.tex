@@ -1,0 +1,40 @@
+\section*{Mathematical model used in the feasibility analysis}
+
+\subsection*{Spiral geometry}
+\[
+r(\theta)=r_0+p\theta,\qquad 0\leq \theta \leq 2\pi N
+\]
+
+\[
+x(\theta)=r(\theta)\cos\theta,\qquad
+y(\theta)=e\,r(\theta)\sin\theta
+\]
+
+Here \(N\) is the number of turns and \(e\) is the ellipticity ratio. The circular spiral is recovered when \(e=1\).
+
+\subsection*{DEP force scaling}
+\[
+\mathbf{F}_{DEP}=2\pi \epsilon_m r_p^3 \operatorname{Re}\{K(\omega)\}\nabla |\mathbf{E}|^2
+\]
+
+\[
+K(\omega)=\frac{\epsilon_p^\ast-\epsilon_m^\ast}{\epsilon_p^\ast+2\epsilon_m^\ast},
+\qquad
+\epsilon^\ast=\epsilon-\frac{j\sigma}{\omega}
+\]
+
+\subsection*{Low-Re particle balance}
+\[
+6\pi\eta r_p(\mathbf{u}_p-\mathbf{u}_f)=\mathbf{F}_{DEP}+\mathbf{F}_{Dean}+\mathbf{F}_{noise}
+\]
+
+\subsection*{Performance metrics}
+\[
+\mathrm{SE}_c=\frac{N_{c,\mathrm{target\ outlet}}}{N_{c,\mathrm{injected}}},
+\qquad
+\mathrm{SP}_c=\frac{N_{c,\mathrm{target\ outlet}}}{N_{\mathrm{all,target\ outlet}}}
+\]
+
+\[
+\mathrm{TopologyGain}=C_{\mathrm{spiral}}-C_{\mathrm{straight,\ same\ length}}
+\]

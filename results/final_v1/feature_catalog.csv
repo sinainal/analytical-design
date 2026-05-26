@@ -1,0 +1,37 @@
+group,feature,definition,role,priority
+geometry,turns,Number of spiral revolutions,primary design variable,high
+geometry,eccentricity,Elliptic scaling y=e r sin(theta),primary design variable,high
+geometry,radius_um,Initial/reference spiral radius,geometry scale,high
+geometry,pitch_um_per_turn,Radial spacing added per turn,sets compactness and clearance,high
+geometry,width_um,Channel width,cell-wall clearance and field scale,high
+geometry,length_mm,Total channel length,residence time and overfitting risk,high
+geometry,footprint_mm2,Planar device area,fabrication/compactness,medium
+geometry,mean_curvature_1_m,Average centerline curvature,curved-flow/Dean proxy,medium
+geometry,p95_curvature_1_m,High-percentile curvature,bend manufacturability/risk,medium
+geometry,min_nonlocal_clearance_um,Minimum spacing between non-neighbor channel segments,no-overlap gate,high
+electrical,voltage_v,Applied electrode voltage,DEP strength and thermal risk,high
+electrical,frequency_hz,AC frequency,CM-factor/live-dead contrast,high
+electrical,electrode_gap_um,Effective electrode gap,field strength and fabrication,high
+electrical,electrode_coverage,Fraction of path with active DEP,interaction length,high
+electrical,field_gain,Reduced-order correction for electrode layout,proxy for field concentration,medium
+electrical,effective_field_kV_m,Effective electric field,DEP and Joule proxy,high
+electrical,active_joule_power_mW,Joule-power proxy,thermal feasibility,high
+electrical,steady_substrate_delta_c_proxy,Temperature-rise proxy,thermal gate,high
+flow,velocity_um_s,Mean inlet velocity,residence time and hydrodynamic drag,high
+flow,flow_uL_min,Volumetric flow rate,throughput,high
+flow,residence_s,Length divided by velocity,interaction time,high
+flow,pressure_drop_kPa,Pressure-drop proxy,device operation,medium
+flow,reynolds,Reynolds number,laminar/inertial regime,medium
+flow,dean_scale,Reduced-order curved-flow drift factor,spiral contribution,high
+inlet_outlet,inlet_offset_ratio,Mean inlet lateral offset,prefocusing sensitivity,high
+inlet_outlet,inlet_spread_ratio,Distribution width at inlet,robustness to sample focusing,high
+inlet_outlet,outlet_split_ratio,Outlet decision boundary,purity/recovery trade-off,high
+inlet_outlet,dep_start_fraction,DEP activation start along path,staging,medium
+inlet_outlet,dep_end_fraction,DEP activation end along path,staging,medium
+outputs,target_correct,Correct outlet fraction,primary but insufficient alone,high
+outputs,live_recovery,Live cells collected in live outlet,biological usefulness,high
+outputs,dead_removal,Dead cells rejected/removed,application target,high
+outputs,live_outlet_purity,Live fraction in live outlet,downstream purity,high
+outputs,dead_outlet_purity,Dead fraction in dead outlet,waste stream purity,medium
+outputs,wall_loss,Fraction of particles contacting walls/lost,device failure mode,high
+outputs,topology_gain_vs_straight,Spiral improvement over same-length straight control,spiral-specific evidence,high

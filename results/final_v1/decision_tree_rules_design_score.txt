@@ -1,0 +1,28 @@
+|--- active_joule_power_mW <= 24.37
+|   |--- field_gain <= 1.18
+|   |   |--- flow_uL_min <= 0.55
+|   |   |   |--- curvature_power <= 1.16
+|   |   |   |   |--- value: [0.52]
+|   |   |   |--- curvature_power >  1.16
+|   |   |   |   |--- value: [0.67]
+|   |   |--- flow_uL_min >  0.55
+|   |   |   |--- width_um <= 97.40
+|   |   |   |   |--- value: [0.48]
+|   |   |   |--- width_um >  97.40
+|   |   |   |   |--- value: [0.38]
+|   |--- field_gain >  1.18
+|   |   |--- active_joule_power_mW <= 11.38
+|   |   |   |--- active_joule_power_mW <= 4.27
+|   |   |   |   |--- value: [0.40]
+|   |   |   |--- active_joule_power_mW >  4.27
+|   |   |   |   |--- value: [0.28]
+|   |   |--- active_joule_power_mW >  11.38
+|   |   |   |--- active_joule_power_mW <= 14.98
+|   |   |   |   |--- value: [0.14]
+|   |   |   |--- active_joule_power_mW >  14.98
+|   |   |   |   |--- value: [0.07]
+|--- active_joule_power_mW >  24.37
+|   |--- active_joule_power_mW <= 36.30
+|   |   |--- value: [-0.06]
+|   |--- active_joule_power_mW >  36.30
+|   |   |--- value: [-0.58]

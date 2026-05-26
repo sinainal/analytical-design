@@ -1,0 +1,37 @@
+|--- flow_uL_min <= 0.48
+|   |--- length_mm <= 6.92
+|   |   |--- velocity_um_s <= 1195.64
+|   |   |   |--- value: [0.50]
+|   |   |--- velocity_um_s >  1195.64
+|   |   |   |--- value: [0.64]
+|   |--- length_mm >  6.92
+|   |   |--- voltage_v <= 11.99
+|   |   |   |--- value: [0.59]
+|   |   |--- voltage_v >  11.99
+|   |   |   |--- dep_start_fraction <= 0.31
+|   |   |   |   |--- value: [0.94]
+|   |   |   |--- dep_start_fraction >  0.31
+|   |   |   |   |--- value: [0.76]
+|--- flow_uL_min >  0.48
+|   |--- width_um <= 97.48
+|   |   |--- effective_voltage_v <= 19.47
+|   |   |   |--- dep_start_fraction <= 0.23
+|   |   |   |   |--- value: [0.64]
+|   |   |   |--- dep_start_fraction >  0.23
+|   |   |   |   |--- value: [0.53]
+|   |   |--- effective_voltage_v >  19.47
+|   |   |   |--- velocity_um_s <= 3025.98
+|   |   |   |   |--- value: [0.87]
+|   |   |   |--- velocity_um_s >  3025.98
+|   |   |   |   |--- value: [0.63]
+|   |--- width_um >  97.48
+|   |   |--- inlet_offset_ratio <= -0.55
+|   |   |   |--- flow_uL_min <= 0.60
+|   |   |   |   |--- value: [0.52]
+|   |   |   |--- flow_uL_min >  0.60
+|   |   |   |   |--- value: [0.50]
+|   |   |--- inlet_offset_ratio >  -0.55
+|   |   |   |--- residence_s <= 4.46
+|   |   |   |   |--- value: [0.52]
+|   |   |   |--- residence_s >  4.46
+|   |   |   |   |--- value: [0.62]
